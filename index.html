@@ -24,41 +24,126 @@
         }
         :root{font-family:'laundry'; font-weight:600; font-size:30px;}
 
-        .header .container{width:1770px; margin:0 auto;}
-        .intro .img-box{width:100%;}
-        .logo img{width:280px; padding-top:43px;}
+        /* header 스타일 */
+        .header{background:url(./images/img-intro.jpg) no-repeat; height:960px;}
+        .header .container{position:relative; width:1770px; margin:0 auto; padding-top:43px;}
+        .logo img{width:280px;}
+        .header-box{display:flex; align-items:center;}
+        .nav{display:flex; width:984px; justify-content:space-between; position:absolute; right:0; padding-bottom:24px;}
+        h1{font-size:35px; position:absolute; left:517px; top:339px;}
+        h2{font-size:70px; position:absolute; left:517px; top:386px; line-height:90px;}
+        h2 span{padding-left:304px;}
+
+        /* sec01 스타일 */
+        .sec01{background:url(./images/img-back01.jpg) no-repeat; height:960px;}
+        .sec01 .container{width:1639px; margin:0 auto; padding-top:84px;}
+        h3{font-size:45px;}
+        .profile-box p{font-size:20px; text-align:center; padding-top:22px; line-height:35px;}
+        .profile-box img{width:300px;}
+        .profile-txt h5{font-family:'Pretendard'; font-weight:500; font-size:20px;}
+        .profile-txt p{font-family:'Pretendard'; font-weight:500; font-size:20px;}
+        .row{display:flex; padding-top:84px;}
+        .profile-txt{position:relative; display:grid; grid-template-columns:auto auto; row-gap:115px; column-gap:342px; padding-left:138px;}
+        .profile-txt .art li{display:flex; align-items:center; padding-bottom:7px;}
+        .art-about p, .art-cer h5{position:absolute; left:305px;}
+        .art-exp h5{position:absolute; left:881px;}
+        h4{padding-bottom:38px;}
+        .art-edu h4{padding-bottom:29px;}
+        .art-edu h5, .art-cer h5, .art-exp h5{order:2;}
+        .art-edu p, .art-cer p, .art-exp p{order:1;}
+        .art-edu li:first-child{line-height:31px;}
+        .edu-pad h5{padding-left:40px;}
+
+        /* sec02 스타일 */
+        .sec02{background:url(./images/img-back02.jpg) no-repeat; height:960px;}
+        .sec02 .container{width:1639px; margin:0 auto; padding-top:84px;}
+        .sec02 h3{padding-bottom:84px;}
+        .sec02 p{font-family:'Pretendard'; font-weight:500; font-size:20px; text-align:center; transform:translateX(-43px);
+            padding-top:33px; margin-bottom:76px;}
+        .sec02 img{width:150px; margin-right:88px;}
+        .sec02 .article{display:flex; justify-content:space-between; flex-flow:row wrap; margin:0 auto; width:1472px;}
+        .art03 img, .art04 img{width:104px;}
+        .article02{display:flex; width:1266px; justify-content:space-between; margin:0 auto;}
+
+        /* sec03 스타일 */
+        .sec03{background:url(./images/img-back03.jpg) no-repeat; height:960px;}
+        .sec03 .container{width:1639px; margin:0 auto; padding-top:84px;}
+        .sec03 h3{padding-bottom:84px;}
+        .sec03 .slide img{width:940px; margin-right:88px;}
+        .slide-contents{font-family:'Pretendard'; font-weight:500; font-size:20px; padding-top:160px;}
+        .slide-contents li{padding-bottom:13px;}
+        .slide-contents ul{padding-bottom:90px;}
+        .sec03 .slide{display:flex;}
+        .sec03 button{width:183px; height:66px; border-radius:5px; border:none; background:#f85555;
+            font-family:'Pretendard'; font-weight:500; font-size:20px; color:#fff;}
+        .sec03 .slide button{margin-right:30px;}
+        .sec03 .slide02 button{background:rgb(8, 8, 83);}
+
+        /* sec04 스타일 */
+        .sec04{background:url(./images/img-back04.jpg) no-repeat; height:960px;}
+        .sec04 .container{width:1639px; margin:0 auto; padding-top:84px;}
+        .sec04 h3{padding-bottom:84px;}
+        .sec04 .slide img{width:940px; margin-right:88px;}
+        .sec04 .slide-contents{font-family:'Pretendard'; font-weight:500; font-size:20px; padding-top:100px;}
+        .sec04 .slide-contents li{padding-bottom:13px;}
+        .sec04 .slide-contents li:nth-child(3){padding-bottom:8px;}
+        .sec04 .slide-contents ul{padding-bottom:50px;}
+        .sec04 .slide{display:flex;}
+        .sec04 .button{display:flex; width:610px; justify-content:space-between; flex-flow:row wrap;}
+        .sec04 button{width:165px; height:66px; border-radius:5px; border:none; background:#f85555;
+            font-family:'Pretendard'; font-weight:500; font-size:20px; color:#fff;}
+        .sec04 .slide button{margin-right:38px; margin-bottom:20px;}
+        .sec04 .slide01 button{background:#000;}
+        .sec04 .slide02 button{background:#ff8a00;}
+        .li04{line-height:33px;}
+        .btn-other{display:inline;}
+        .btn-other01{margin-right:25px;}
+        .btn-other02{margin-left:-5px;}
+
+        /* swiper 내비게이션 */
+        .swiper-button-next:after, .swiper-button-prev:after{display:none;}
+        .swiper-button-prev svg{fill:#000;}
+
+        /* footer 스타일 */
+        .footer{width:100%; height:200px; background:#000;}
+        .footer .container{position:relative; width:1770px; margin:0 auto;}
+        .footer .container>p{font-family:'Pretendard'; font-weight:500; font-size:20px; color:#fff; padding-top:85px;}
+        .sns-box{display:flex;}
+        .sns-box .img-box{width:70px; padding-top:25px; margin-left:31px;}
+        .sns-box .img-box svg{fill:#fff;}
+        .sns-box, .f-right p{position:absolute; right:0; top:0;}
+        .f-right p{font-family:'Pretendard'; font-weight:500; font-size:20px; color:#fff;}
+        .f-right .p01{top:118px;}
+        .f-right .p02{top:150px;}
     </style>
 </head>
 <body>
     <section class="wrap">
-        <section class="intro">
-            <div class="container">
-                <div class="img-box"><img src="./images/img-intro.jpg" alt="intro"></div>
-                <h1>WEB DESIGN & PUBLISHING</h1>
-                <h2>HANEUNBI's<br>PORTFOLIO</h2>
-            </div>            
-        </section>
         <header class="header">
             <div class="container">
-                <div class="logo">
-                    <div class="img-box"><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></div>
-                </div>
-                <nav>
-                    <ul class="nav">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">PROFILE</a></li>
-                        <li><a href="#">SKILLS</a></li>
-                        <li><a href="#">TEAM-PROJECT</a></li>
-                        <li><a href="#">WEB-DESIGN</a></li>
-                    </ul>
-                </nav>                
+                <div class="header-box">
+                    <div class="logo">
+                        <div class="img-box"><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></div>
+                    </div>
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">PROFILE</a></li>
+                            <li><a href="#">SKILLS</a></li>
+                            <li><a href="#">TEAM-PROJECT</a></li>
+                            <li><a href="#">WEB-DESIGN</a></li>
+                        </ul>
+                    </nav>
+                </div>                
+                <h1>WEB DESIGN & PUBLISHING</h1>
+                <h2>HANEUNBI's<br><span>PORTFOLIO</span></h2>
             </div>
-        </header>        
-        <!-- <section class="sec sec01">
+        </header>            
+        <section class="sec sec01">
             <div class="container">
                 <h3>PROFILE</h3>
                 <div class="row">
-                    <div>
+                    <div class="profile-box">
                         <div class="img-box">
                             <img src="./images/img-profile.jpg" alt="profile">
                         </div>
@@ -92,11 +177,11 @@
                                 <li>
                                     <h5>2024.01~2024.05<br>UI/UX 프론트엔드 반응형 웹디자인&웹퍼블리셔 개발자과정A</h5>
                                 </li>
-                                <li>
+                                <li class="edu-pad">
                                     <h5>숭의여자대학교 졸업</h5>
                                     <p>2019.03~2021.02</p>
                                 </li>
-                                <li>
+                                <li class="edu-pad">
                                     <h5>한국주얼리고등학교 졸업</h5>
                                     <p>2016.03~2019.02</p>
                                 </li>
@@ -163,56 +248,60 @@
                     </div>
                 </div>
             </div>
-        </section> -->
-        <!-- <section class="sec sec02">
+        </section>
+        <section class="sec sec02">
             <div class="container">
-                <h3>PROFILE</h3>
-                <article class="art art01">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>이미지 편집 및 합성<br>기본툴 사용 가능</p>
-                </article>
-                <article class="art art02">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>포스터,배너 등<br>이미지 제작 가능</p>
-                </article>
-                <article class="art art03">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>안정적인<br>문서 제작 가능</p>
-                </article>
-                <article class="art art04">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>기본적인 css이해와<br>스타일 제작 가능</p>
-                </article>
-                <article class="art art05">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>간단한 이벤트 함수<br>제작 가능</p>
-                </article>
-                <article class="art art06">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>프로그램 업로드,<br>편집 가능</p>
-                </article>
-                <article class="art art07">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>기본 문서 제작 가능</p>
-                </article>
-                <article class="art art08">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>PPT 제작,<br>편집 가능</p>
-                </article>
-                <article class="art art09">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>문서 제작 및<br>업무 활용 가능</p>
-                </article>
-                <article class="art art10">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>간단한 문서<br>편집 가능</p>
-                </article>
-                <article class="art art11">
-                    <div class="img-box"><img src="" alt=""></div>
-                    <p>툴을 이용한<br>모델링 가능</p>
-                </article>
+                <h3>SKILLS</h3>
+                <div class="article">
+                    <article class="art art01">
+                        <div class="img-box"><img src="./images/ico-ps.png" alt="ps"></div>
+                        <p>이미지 편집 및 합성<br>기본툴 사용 가능</p>
+                    </article>
+                    <article class="art art02">
+                        <div class="img-box"><img src="./images/ico-ai.png" alt="ai"></div>
+                        <p>포스터,배너 등<br>이미지 제작 가능</p>
+                    </article>
+                    <article class="art art03">
+                        <div class="img-box"><img src="./images/ico-html5.png" alt="html5"></div>
+                        <p>안정적인<br>문서 제작 가능</p>
+                    </article>
+                    <article class="art art04">
+                        <div class="img-box"><img src="./images/ico-css3.png" alt="css3"></div>
+                        <p>기본적인 css이해와<br>스타일 제작 가능</p>
+                    </article>
+                    <article class="art art05">
+                        <div class="img-box"><img src="./images/ico-js.png" alt="js"></div>
+                        <p>간단한 이벤트 함수<br>제작 가능</p>
+                    </article>
+                    <article class="art art06">
+                        <div class="img-box"><img src="./images/ico-git.png" alt="git"></div>
+                        <p>프로그램 업로드,<br>편집 가능</p>
+                    </article>
+                    <div class="article02">
+                        <article class="art art07">
+                            <div class="img-box"><img src="./images/ico-word.png" alt="word"></div>
+                            <p>기본 문서 제작 가능</p>
+                        </article>
+                        <article class="art art08">
+                            <div class="img-box"><img src="./images/ico-ppt.png" alt="ppt"></div>
+                            <p>PPT 제작,<br>편집 가능</p>
+                        </article>
+                        <article class="art art09">
+                            <div class="img-box"><img src="./images/ico-excel.png" alt="excel"></div>
+                            <p>문서 제작 및<br>업무 활용 가능</p>
+                        </article>
+                        <article class="art art10">
+                            <div class="img-box"><img src="./images/ico-access.png" alt="access"></div>
+                            <p>간단한 문서<br>편집 가능</p>
+                        </article>
+                        <article class="art art11">
+                            <div class="img-box"><img src="./images/ico-Rhino.png" alt="Rhino"></div>
+                            <p>툴을 이용한<br>모델링 가능</p>
+                        </article>
+                    </div>                    
+                </div>                
             </div>
-        </section> -->
+        </section>
         <section class="sec sec03">
             <div class="container">
                 <h3>TEAM PROJECT</h3>
@@ -251,14 +340,22 @@
                                 </div>
                             </div>
                         </div>                    
-                    </div>
-                
+                    </div>                
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                    <div class="btn-move swiper-button-prev">
+                        <a href="#" class="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="btn-move swiper-button-next">
+                        <a href="#" class="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -278,14 +375,16 @@
                                         <li>TYPE : EB Entertainment 웹사이트</li>
                                         <li>PAGE : INDEX, SUB*5 (6페이지)</li>
                                         <li>PERIOD : 2주, 디자인+퍼블리싱 개인 100% 작업</li>
-                                        <li>TOOL : Photoshop / HTML5 / CSS3 / javascript<br>/ Github / KAKAO Oven</li>
+                                        <li class="li04">TOOL : Photoshop / HTML5 / CSS3 /<br>javascript/ Github / KAKAO Oven</li>
                                     </ul>
                                     <div class="button">
                                         <button><a href="https://ovenapp.io/view/qPL0kp7UeK3vzIZpH6Mg5PRxwxMfU3iF/MNrEs">와이어프레임</a></button>
                                         <button><a href="https://ovenapp.io/view/xj5QAiWnYpIGteFeKEe1GuxX5gdKD2z9/bDV3S">프로토타입</a></button>
                                         <button><a href="https://github.com/eunbi1228/EB-ENT/blob/main/EBEnt-Planning.pdf">기획서</a></button>
-                                        <button><a href="https://github.com/eunbi1228/EB-ENT/tree/main/photoshop">시안디자인</a></button>
-                                        <button><a href="https://eunbi1228.github.io/EB-ENT/index.html">WEB</a></button>
+                                        <div class="btn-other">
+                                            <button class="btn-other01"><a href="https://github.com/eunbi1228/EB-ENT/tree/main/photoshop">시안디자인</a></button>
+                                            <button class="btn-other02"><a href="https://eunbi1228.github.io/EB-ENT/index.html">WEB</a></button>
+                                        </div>                                        
                                     </div>                                    
                                 </div>
                             </div>
@@ -298,26 +397,36 @@
                                         <li>TYPE : Pli 음악스트리밍 웹사이트</li>
                                         <li>PAGE : INDEX, SUB*10 (11페이지)</li>
                                         <li>PERIOD : 12일, 디자인+퍼블리싱 개인 100% 작업</li>
-                                        <li>TOOL : Photoshop / HTML5 / CSS3 / javascript<br>/ Github / KAKAO Oven</li>
+                                        <li class="li04">TOOL : Photoshop / HTML5 / CSS3 /<br>javascript/ Github / KAKAO Oven</li>
                                     </ul>
                                     <div class="button">
                                         <button><a href="https://ovenapp.io/view/Q7kIWDn0NdFcBQvGuKW9jqXfuuMkpiaB/wumW9">와이어프레임</a></button>
                                         <button><a href="https://ovenapp.io/view/KRZkuuyfC7Y900JTiaiRfb7KeXNOzbBF/wumW9">프로토타입</a></button>
                                         <button><a href="https://github.com/eunbi1228/Pli/blob/main/Pli-planning.pdf">기획서</a></button>
-                                        <button><a href="https://github.com/eunbi1228/Pli/tree/main/photoshop">시안디자인</a></button>
-                                        <button><a href="https://eunbi1228.github.io/Pli/index.html">WEB</a></button>
+                                        <div class="btn-other">
+                                            <button class="btn-other01"><a href="https://github.com/eunbi1228/Pli/tree/main/photoshop">시안디자인</a></button>
+                                            <button class="btn-other02"><a href="https://eunbi1228.github.io/Pli/index.html">WEB</a></button>
+                                        </div>                                        
                                     </div>
                                 </div>
                             </div>
                         </div>                    
-                    </div>
-                
+                    </div>                
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                    <div class="btn-move swiper-button-prev">
+                        <a href="#" class="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="btn-move swiper-button-next">
+                        <a href="#" class="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -327,13 +436,36 @@
                 <div class="f-right">
                     <div class="sns-box">
                         <div class="img-box"><a href="#"><img src="./images/ico-f-git.svg" alt="git"></a></div>
-                        <div class="img-box"><a href="#"><img src="./images/ico-insta.svg" alt="insta"></a></div>
+                        <div class="img-box">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <p>010-5668-4902</p>
-                    <p>haneunbi0330@naver.com</p>
+                    <p class="p01">010-5668-4902</p>
+                    <p class="p02">haneunbi0330@naver.com</p>
                 </div>
             </div>
         </footer>
     </section>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
