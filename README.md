@@ -6,7 +6,7 @@
 [PORTFOLIO 기획서](https://github.com/eunbi1228/eunbi1228.github.io/blob/main/portfolio-planning.pdf)<br>
 [PORTFOLIO 와이어프레임 바로가기](https://ovenapp.io/view/qPL0kp7UeK3vzIZpH6Mg5PRxwxMfU3iF/MNrEs)<br>
 [PORTFOLIO 프로토타입 바로가기](https://ovenapp.io/view/xj5QAiWnYpIGteFeKEe1GuxX5gdKD2z9/bDV3S)<br>
-[PORTFOLIO 시안디자인](https://github.com/eunbi1228/eunbi1228.github.io/tree/main/photoshop)<br>
+[PORTFOLIO 시안디자인](https://github.com/eunbi1228/eunbi1228.github.io/tree/main/portfolio.psd)<br>
 
 <hr>
 
