@@ -1,6 +1,11 @@
 # PORTFOLIO
 
-팀 프로젝트와 UX/UI부터 퍼블리싱까지 자체제작한 개인 프로젝트를 활용해 제작한 포트폴리오 웹사이트입니다.
+팀 프로젝트와 UX/UI부터 퍼블리싱까지 자체제작한 개인 프로젝트를 활용해 제작한 포트폴리오 웹사이트입니다.<br><br>
+
+[PORTFOLIO 바로가기](https://eunbi1228.github.io/PORTFOLIO/index.html)<br><br>
+[PORTFOLIO 와이어프레임 바로가기](https://ovenapp.io/view/AhxIOUSlZlNvUD75x1k3kUTGw3GZyGv5/CZj9D)<br>
+[PORTFOLIO 프로토타입 바로가기](https://ovenapp.io/view/K9FY0OqeBXJJbZ7cmuPsHl4wmTVNIJfK/t6NJ7)<br>
+[PORTFOLIO 시안디자인](https://github.com/eunbi1228/PORTFOLIO/tree/main/photoshop)<br>
 <hr>
 
 ## PROJECT
