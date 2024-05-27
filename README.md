@@ -26,3 +26,5 @@
 기본적인 UI/UX 디자인부터 직접 제작한 로고와 배너, 퍼블리싱까지 자체제작으로 작업한 음악 스트리밍 웹사이트입니다.<br>
 밝은 계열의 메인컬러와 메인 인덱스 페이지 안에서 많은 정보를 확인할 수 있도록 중점으로 하여 구성하였습니다.<br>
 [여기](https://github.com/eunbi1228/Pli)를 클릭하시면 더 자세한 프로젝트 정보를 확인하실 수 있습니다.
+
+![PORTFOLIO 시안디자인](https://github.com/eunbi1228/eunbi1228.github.io/blob/main/images/portfolio-index.jpg)
