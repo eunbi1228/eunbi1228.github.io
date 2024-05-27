@@ -604,6 +604,13 @@
                 clickable: true,
             },
         });
+
+        // nav 클릭 이벤트
+        $('.nav li').click(function(e){
+            e.preventDefault();
+            let thisIdx = $(this).index();
+            swiperFull.slideTo( thisIdx)
+        })
     </script>
 </body>
 </html>
