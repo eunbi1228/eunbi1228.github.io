@@ -35,7 +35,8 @@
 
         /* sec00 스타일 */
         .wrap{background:url(./images/img-intro.jpg) no-repeat; height:960px;}
-        .sec00{height:842px;}
+        .sec00{height:842px;opacity:0;transition:1s;}
+
         h1{font-size:35px; padding-left:592px; padding-top:240px;}
         h2{font-size:70px; padding-left:592px; line-height:90px;}
 
@@ -43,12 +44,16 @@
         .sec01{background:url(./images/img-back01.jpg) no-repeat; height:960px;}
         .sec01 .container{width:1639px; margin:0 auto; padding-top:84px;}
         h3{font-size:45px;}
+        .profile-box{opacity:0; transition:1.5s 0.5s;}
+        .profile-box.active{opacity:1;}
         .profile-box p{font-size:20px; text-align:center; padding-top:22px; line-height:35px;}
         .profile-box img{width:300px;}
         .profile-txt h5{font-family:'Pretendard'; font-weight:500; font-size:20px;}
         .profile-txt p{font-family:'Pretendard'; font-weight:500; font-size:20px;}
         .row{display:flex; padding-top:84px;}
         .profile-txt{position:relative; display:grid; grid-template-columns:auto auto; row-gap:115px; column-gap:342px; padding-left:138px;}
+        .profile-txt .art{opacity:0; transition:1.5s 1.5s;}
+        .profile-txt .art.active{opacity:1;}
         .profile-txt .art li{display:flex; align-items:center; padding-bottom:7px;}
         .art-about p, .art-cer h5{position:absolute; left:305px;}
         .art-exp h5{position:absolute; left:881px;}
@@ -68,6 +73,10 @@
         .sec02 .row{display:flex; justify-content:space-evenly; flex-flow:row nowrap;}
         .sec02 .row02{padding-left:50px; padding-right:50px;}
         .sec02 .row .art{width:158px;}
+        .sec02 .row01 .art{margin-top:-500%; transition:1s 0.2s;}
+        .sec02 .row02 .art{margin-top:-500%; transition:1s 1.2s;}
+        .sec02 .row01 .art.active{margin-top:0;}
+        .sec02 .row02 .art.active{margin-top:0;}
         .sec02 .row .art .box{position:relative;}
         .sec02 .row .art .box::before{content:''; display:block; position:absolute; left:0; right:0; bottom:0; height:0;
             border-radius:20px; background:#fff; opacity:0.5; transition:0.3s;}
@@ -99,8 +108,11 @@
         .sec03{background:url(./images/img-back03.jpg) no-repeat; height:960px;}
         .sec03 .container{width:1639px; margin:0 auto; padding-top:84px;}
         .sec03 h3{padding-bottom:84px;}
-        .sec03 .slide img{width:940px; margin-right:88px;}
+        .sec03 .slide img{width:940px; margin-right:88px; opacity:0; transition:1s 0.5s;}
+        .sec03 .slide img.active{opacity:1;}
         .slide-contents{font-family:'Pretendard'; font-weight:500; font-size:20px; padding-top:160px;}
+        .sec03 .slide-contents{opacity:0; transition:1s 1.5s;}
+        .sec03 .slide-contents.active{opacity:1;}
         .slide-contents li{padding-bottom:13px;}
         .slide-contents ul{padding-bottom:90px;}
         .sec03 .slide{display:flex;}
@@ -113,8 +125,11 @@
         .sec04{background:url(./images/img-back04.jpg) no-repeat; height:960px;}
         .sec04 .container{width:1639px; margin:0 auto; padding-top:84px;}
         .sec04 h3{padding-bottom:84px;}
-        .sec04 .slide img{width:940px; margin-right:88px;}
-        .sec04 .slide-contents{font-family:'Pretendard'; font-weight:500; font-size:20px; padding-top:100px;}
+        .sec04 .slide img{width:940px; margin-right:88px; opacity:0; transition:1s 0.5s;}
+        .sec04 .slide img.active{opacity:1;}
+        .sec04 .slide-contents{font-family:'Pretendard'; font-weight:500; font-size:20px; padding-top:100px;
+            opacity:0; transition:1s 1.5s;}
+        .sec04 .slide-contents.active{opacity:1;}
         .sec04 .slide-contents li{padding-bottom:13px;}
         .sec04 .slide-contents li:nth-child(3){padding-bottom:8px;}
         .sec04 .slide-contents ul{padding-bottom:50px;}
@@ -134,10 +149,9 @@
         /* swiper 내비게이션 */
         .swiper-button-next:after, .swiper-button-prev:after{display:none;}
         .swiper-button-prev svg{fill:#000;}
-        .swiper{position:static;}
-        .btn-move{position:absolute; top:3430px; margin:0 60px;}
-        .swiper-design .btn-move{top:4380px;}
-        .swiper{width: 100%; height: 100%;}
+        .swiper{position:static; width:100%; height:100%;}
+        .btn-move{position:absolute; top:50%; margin:0 60px;}
+        .swiper-design .btn-move{top:50%;}
 
         /* footer 스타일 */
         .footer{width:100%; height:200px; background:#000;}
@@ -298,7 +312,7 @@
                     <section class="sec sec02">
                         <div class="container">
                             <h3>SKILLS</h3>
-                            <div class="row">
+                            <div class="row row01">
                                 <article class="art art01">
                                     <div class="box">
                                         <div class="img-box">
@@ -487,7 +501,7 @@
                                                     <button><a href="https://ovenapp.io/view/xj5QAiWnYpIGteFeKEe1GuxX5gdKD2z9/bDV3S">프로토타입</a></button>
                                                     <button><a href="https://github.com/eunbi1228/EB-ENT/blob/main/EBEnt-Planning.pdf">기획서</a></button>
                                                     <div class="btn-other">
-                                                        <button class="btn-other01"><a href="https://github.com/eunbi1228/EB-ENT/tree/main/design">시안디자인</a></button>
+                                                        <button class="btn-other01"><a href="https://github.com/eunbi1228/EB-ENT/tree/main/photoshop">시안디자인</a></button>
                                                         <button class="btn-other02"><a href="https://eunbi1228.github.io/EB-ENT/index.html">WEB</a></button>
                                                     </div>                                        
                                                 </div>                                    
@@ -509,7 +523,7 @@
                                                     <button><a href="https://ovenapp.io/view/KRZkuuyfC7Y900JTiaiRfb7KeXNOzbBF/wumW9">프로토타입</a></button>
                                                     <button><a href="https://github.com/eunbi1228/Pli/blob/main/Pli-planning.pdf">기획서</a></button>
                                                     <div class="btn-other">
-                                                        <button class="btn-other01"><a href="https://github.com/eunbi1228/Pli/tree/main/design">시안디자인</a></button>
+                                                        <button class="btn-other01"><a href="https://github.com/eunbi1228/Pli/tree/main/photoshop">시안디자인</a></button>
                                                         <button class="btn-other02"><a href="https://eunbi1228.github.io/Pli/index.html">WEB</a></button>
                                                     </div>                                        
                                                 </div>
@@ -531,7 +545,7 @@
                                                     <button><a href="https://ovenapp.io/view/K9FY0OqeBXJJbZ7cmuPsHl4wmTVNIJfK/CZj9D">프로토타입</a></button>
                                                     <button><a href="https://github.com/eunbi1228/eunbi1228.github.io/blob/main/portfolio-planning.pdf">기획서</a></button>
                                                     <div class="btn-other">
-                                                        <button class="btn-other01"><a href="https://github.com/eunbi1228/eunbi1228.github.io/tree/main/portfolio.jpg">시안디자인</a></button>
+                                                        <button class="btn-other01"><a href="https://github.com/eunbi1228/eunbi1228.github.io/tree/main/portfolio.psd">시안디자인</a></button>
                                                         <button class="btn-other02"><a href="https://eunbi1228.github.io/eunbi1228.github.io/index.html">WEB</a></button>
                                                     </div>                                        
                                                 </div>
@@ -583,9 +597,15 @@
     </section>
 
     <script>
+        // intro sec00 호출 이벤트
+        setTimeout(function(){
+            $('.sec00').css({
+                opacity:'1',
+            })
+        },500)
+            
         // 섹션 swiper 이벤트
         const swiperSec = new Swiper('.swiper-team, .swiper-design', {
-            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -606,6 +626,38 @@
                 reachEnd: function() {                   
                     swiperFull.params.touchReleaseOnEdges = true;
                     swiperFull.params.mousewheel.releaseOnEdges = true;
+                },
+                // 페이지 변경 시 이벤트
+                slideChange:function(){
+                    let acIdx = swiperFull.activeIndex;
+                    if(acIdx==1){
+                        $('.profile-box').addClass('active');
+                        $('.profile-txt .art').addClass('active');
+                    }else{
+                        $('.profile-box').removeClass('active');
+                        $('.profile-txt .art').removeClass('active');
+                    };
+                    if(acIdx==2){
+                        $('.row01 .art').addClass('active');
+                        $('.row02 .art').addClass('active');
+                    }else{
+                        $('.row01 .art').removeClass('active');
+                        $('.row02 .art').removeClass('active');
+                    };
+                    if(acIdx==3){
+                        $('.sec03 .slide img').addClass('active');
+                        $('.sec03 .slide-contents').addClass('active');
+                    }else{
+                        $('.sec03 .slide img').removeClass('active');
+                        $('.sec03 .slide-contents').removeClass('active');
+                    };
+                    if(acIdx==4){
+                        $('.sec04 .slide img').addClass('active');
+                        $('.sec04 .slide-contents').addClass('active');
+                    }else{
+                        $('.sec04 .slide img').removeClass('active');
+                        $('.sec04 .slide-contents').removeClass('active');
+                    };
                 },
             },     
         });
